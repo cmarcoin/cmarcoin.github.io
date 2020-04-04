@@ -26,8 +26,8 @@ github_username:  cmarcoin
 
 # Build settings
 markdown: kramdown
-#theme: minima
-theme: minimal-mistakes-jekyll
+theme: minima
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
