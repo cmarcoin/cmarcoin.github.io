@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Bon Modèle</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="./dist/output.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
+
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+
+</head>
+ 
+<body class="bg-brand-background text-brand-text">
+  <div id="header"></div>
+
+  <main class="mt-16">
+    <section class="px-4 py-12 md:px-6 lg:px-8">
+      <div class="mx-auto max-w-[1280px]">
+
+        <div class="mb-4 text-center">
+         <h2 class="font-heading text-4xl mb-4  font-bold text-brand-primary sm:text-5xl">
+            Questions fréquentes
+          </h2>
+        </div>
+
+        <div class="space-y-5 md:space-y-6">
+
+          <!-- ITEM -->
+          <article style=border-radius:16px;" class="faq-item rounded-[24px] py-4 mb-4 bg-brand-primary-light transition-all duration-300">
+            <button
+              type="button" 
+              class="faq-question flex w-full items-center justify-between gap-4 px-6 py-8 text-left md:px-8 md:py-10"
+              aria-expanded="false"
+            >
+              <span  class="faq-label pr-4 font-heading text-[22px] font-bold text-brand-primary md:text-[26px]">
+                Est-ce remboursable ?
+              </span>
+
+              <span class="faq-icon text-[30px] font-bold text-brand-primary transition-all duration-300">
+                +
+              </span>
+            </button>
+
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-8 text-[16px] leading-[1.65] text-white md:px-8 md:pb-10 md:text-[18px]">
+                Non, l’accompagnement n’est pas remboursable une fois la prestation réalisée.
+              </div>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+          <article style=border-radius:16px;" class="faq-item rounded-[24px] py-4 mb-4 bg-brand-primary-light transition-all duration-300">
+            <button class="faq-question flex w-full items-center justify-between gap-4 px-6 py-8 text-left md:px-8 md:py-10">
+              <span class="faq-label pr-4 font-heading text-[22px] font-bold text-brand-primary md:text-[26px]">
+                Puis-je payer en deux fois ?
+              </span>
+              <span class="faq-icon text-[30px] font-bold text-brand-primary transition-all duration-300">+</span>
+            </button>
+
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-8 text-[16px] leading-[1.65] text-white md:px-8 md:pb-10 md:text-[18px]">
+                Oui, selon l’offre choisie, un paiement en plusieurs fois peut être proposé.
+              </div>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+          <article style=border-radius:16px;" class="faq-item rounded-[24px] py-4 mb-4 bg-brand-primary-light transition-all duration-300">
+            <button class="faq-question flex w-full items-center justify-between gap-4 px-6 py-8 text-left md:px-8 md:py-10">
+              <span class="faq-label pr-4 font-heading text-[22px] font-bold text-brand-primary md:text-[26px]">
+                Est ce que vous négociez à ma place ?
+              </span>
+              <span class="faq-icon text-[30px] font-bold text-brand-primary transition-all duration-300">+</span>
+            </button>
+
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-8 text-[16px] leading-[1.65] text-white md:px-8 md:pb-10 md:text-[18px]">
+                Oui, dans le cadre du Pack Premium, nous pouvons vous accompagner sur la négociation.
+              </div>
+            </div>
+          </article>
+
+          <!-- ITEM -->
+          <article style=border-radius:16px;" class="faq-item rounded-[24px] py-4 mb-4 bg-brand-primary-light transition-all duration-300">
+            <button class="faq-question flex w-full items-center justify-between gap-4 px-6 py-8 text-left md:px-8 md:py-10">
+              <span class="faq-label pr-4 font-heading text-[22px] font-bold text-brand-primary md:text-[26px]">
+                Travaillez vous sur toute la France ?
+              </span>
+              <span class="faq-icon text-[30px] font-bold text-brand-primary transition-all duration-300">+</span>
+            </button>
+
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+              <div class="px-6 pb-8 text-[16px] leading-[1.65] text-white md:px-8 md:pb-10 md:text-[18px]">
+                Oui, nous accompagnons des clients partout en France à distance.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script type="module">
+    import { loadHeader } from './header.js';
+    import { loadFooter } from './footer.js';
+    import { initAccordeon } from './accordeon.js';
+
+    loadHeader();
+    loadFooter();
+    initAccordeon();
+  </script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Bon Modèle</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link href="./dist/output.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
+
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.10/dist/dotlottie-wc.js" type="module"></script>
+
+</head>
+ 
+<body class="bg-brand-background text-brand-text">
+  <div id="header"></div>
+
+  <main>
+    <!-- HERO -->
+     <dotlottie-wc  src="assets/intro.lottie"   autoplay class="HeroHome_Animation__intro" ></dotlottie-wc>
+    <section class="px-8 py-16 lg:px-12 lg:py-20" id="js-fade-delay" style="opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;">
+      
+      <div class="mx-auto grid max-w-[1280px] mt-16 items-start gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <h1 class="max-w-[980px] text-[50px] leading-[1.05]">
+            <span class="mr-2 inline-block align-middle font-semibold text-brand-primary">
+              Choisissez
+            </span>
+            <span
+              class="inline-block rounded-xl px-2 py-1 align-middle"
+              style="background:#D0F3BC; color:#34C759; font-weight:900;"
+            >
+              le bon modèle
+            </span>
+            <br />
+            <span class="font-semibold text-brand-primary">
+              Pas celui qu’on cherche à vous vendre.
+            </span>
+          </h1>
+
+          <p class="mt-10 max-w-[920px] text-[24px] leading-[1.45] text-brand-text-secondary">
+            Bien acheter, c’est être bien conseillé. Avec Le Bon Modèle, deux experts
+            indépendants vous accompagnent, pas à pas, pour choisir la voiture la plus
+            adaptée à votre quotidien et à votre budget.
+          </p>
+
+          <div class="mt-16 flex flex-wrap gap-10 text-[18px] font-semibold text-brand-text-secondary">
+            <span class="inline-flex items-center gap-3">
+              <span class="text-[#34C759]">✓</span>
+              Sans commission
+            </span>
+            <span class="inline-flex items-center gap-3">
+              <span class="text-[#34C759]">✓</span>
+              Experts indépendants
+            </span>
+          </div>
+        </div>
+
+        <div class="">
+          <img
+            src="./assets/perdu.gif"
+            width="1600"
+            height="1200"
+            alt="Illustration de recherche de voiture"
+            class="h-auto w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- APPROCHE -->
+    <section id="approche" class="px-8 py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-[1280px]">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-brand-primary sm:text-4xl">
+            Notre approche
+          </h2>
+          <p class="mx-auto mt-4 max-w-5xl text-base leading-7 text-brand-text-secondary sm:text-lg">
+            Acheter une voiture est de plus en plus complexe : une multitude de modèles,
+            des annonces difficiles à comparer, des options à n’en plus finir, des modes
+            d’achat peu lisibles, des prix opaques, etc.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-brand border border-brand-border bg-white p-6 text-center shadow-brand">
+            <img src="./assets/check.svg" width="72" height="72" alt="" class="mx-auto" />
+            <h3 class="mt-4 text-2xl font-bold text-brand-primary">On est passés par là</h3>
+            <p class="mt-3 text-sm leading-6 text-brand-primary">
+              Derrière Le Bon Modèle, il y a Charles et Jules : deux conducteurs qui savent
+              à quel point acheter une voiture peut être complexe, et qui ont appris à comparer,
+              décortiquer et repérer les bonnes affaires.
+            </p>
+          </article>
+
+          <article class="rounded-brand border border-brand-border bg-white p-6 text-center shadow-brand">
+            <img src="./assets/check.svg" width="72" height="72" alt="" class="mx-auto" />
+            <h3 class="mt-4 text-2xl font-bold text-brand-primary">Conseillers indépendants</h3>
+            <p class="mt-3 text-sm leading-6 text-brand-primary">
+              Nous ne vendons pas de voitures. Nous ne prenons pas de commission. Notre métier,
+              c’est de vous fournir un avis d’expert objectif, pour vous aider à faire un choix éclairé.
+            </p>
+          </article>
+
+          <article class="rounded-brand border border-brand-border bg-white p-6 text-center shadow-brand">
+            <img src="./assets/check.svg" width="72" height="72" alt="" class="mx-auto" />
+            <h3 class="mt-4 text-2xl font-bold text-brand-primary">Double expertise</h3>
+            <p class="mt-3 text-sm leading-6 text-brand-primary">
+              Nous combinons une expertise détaillée des véhicules avec une lecture fine de vos
+              vrais besoins et de vos contraintes. Pour trouver une voiture qui vous simplifie la vie.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- ILLUSTRATION COMPARAISON -->
+    <section class="px-8 py-10 lg:px-12 lg:py-16">
+      <div class="mx-auto max-w-[980px] rounded-[20px] bg-brand-beige p-6">
+        <div class="flex min-h-[280px] items-center justify-center rounded-[16px] border border-brand-border bg-white/70 text-center">
+          <div>
+            <p class="font-heading text-2xl font-bold text-brand-primary">
+              Illustration comparaison
+            </p>
+            <p class="mt-2 text-sm text-brand-text-secondary">
+              Zone visuelle à remplacer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- BUDGET -->
+    <section class="px-8 py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-[1280px] text-center">
+        <h2 class="text-3xl font-bold text-brand-primary sm:text-4xl">
+          Un budget, plusieurs réalités
+        </h2>
+        <p class="mt-3 text-brand-text-secondary">
+          À budget constant, vous pouvez opter pour des voitures très différentes,
+          selon le modèle, le niveau d’équipement et le kilométrage.
+        </p>
+
+        <div class="mt-8 flex items-center justify-center gap-8">
+          <button id="purchaseLabel" type="button" class="text-[24px] font-bold text-brand-primary">
+            Achat
+          </button>
+
+          <button
+            id="modeToggle"
+            type="button"
+            aria-pressed="false"
+            class="group relative h-[60px] w-[180px] rounded-full border-2 border-brand-coral bg-white transition-all duration-200 ease-out active:scale-95"
+          >
+            <span
+              id="modeKnob"
+              class="absolute left-1 top-1 h-[48px] w-[48px] rounded-full bg-brand-coral transition-transform duration-200 ease-out group-active:scale-110"
+            ></span>
+          </button>
+
+          <button id="leasingLabel" type="button" class="text-[24px] font-bold text-brand-primary">
+            Leasing (LOA)
+          </button>
+        </div>
+
+        <div id="budgetCards" class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4"></div>
+
+        <div class="mx-auto mt-8 max-w-4xl">
+          <div class="mb-2 flex items-center justify-between text-xl font-bold text-brand-text">
+            <span id="rangeMinLabel">5000€</span>
+            <span id="rangeMaxLabel">50 000€</span>
+          </div>
+
+          <p id="rangeCurrentLabel" class="mb-4 text-xl font-bold text-brand-primary">5000€</p>
+
+          <input
+            id="budgetRange"
+            type="range"
+            min="5000"
+            max="50000"
+            value="5000"
+            step="5000"
+            class="budget-track h-2 w-full appearance-none rounded-full bg-transparent"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFRES -->
+    <section id="offres" class="px-6 py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-[1280px]">
+        <div class="text-center">
+          <h2 class="font-heading text-4xl font-bold text-brand-primary sm:text-5xl">
+            Nos accompagnements
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-2">
+          <a
+            href="starter-pack.html"
+            class="group block rounded-[28px] border border-[#E7E2DC] bg-white p-6 shadow-[0_6px_24px_rgba(0,0,0,0.05)] transition-all duration-300 ease-out hover:-translate-y-[4px] hover:bg-[#FAF3EB] hover:shadow-[0_14px_40px_rgba(0,0,0,0.08)] sm:p-8"
+          >
+            <div class="flex h-full flex-col">
+              <img src="./assets/icons/starter-pack.svg" alt="" class="h-16 w-12"  />
+
+              <h3 class="mt-4 font-heading text-[34px] font-bold leading-none text-[#34C759] sm:text-[42px]">
+                Starter pack
+              </h3>
+
+              <div class="mt-6 h-px w-full bg-[#D9D9D9]"></div>
+
+              <div class="mt-6">
+                <p class="text-[20px] font-bold text-brand-primary sm:text-[22px]">Objectif :</p>
+                <p class="mt-2 font-heading text-[30px] font-bold leading-[1.05] text-brand-text sm:text-[36px]">
+                  Identifier le modèle qu’il vous faut
+                </p>
+              </div>
+
+              <p class="mt-8 text-[18px] leading-[1.4] text-brand-text-secondary sm:text-[20px]">
+                Passez 90 min avec nos deux experts auto pour identifier le bon modèle
+                de voiture à acheter, celui qui correspond vraiment à vos besoins, vos
+                contraintes et votre budget.
+              </p>
+
+              <div class="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <span class="inline-flex min-h-[64px] items-center justify-center rounded-full bg-brand-primary px-8 text-[18px] font-bold text-white transition group-hover:scale-[1.02]">
+                  Je choisis cette offre
+                </span>
+
+                <div class="font-heading leading-none text-brand-text">
+                  <span class="text-[64px] font-black tracking-[-0.04em]">59€</span>
+                  <span class="ml-2 text-[26px] font-medium">ttc</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="pack-premium.html"
+            class="group block rounded-[28px] border border-[#E7E2DC] bg-white p-6 shadow-[0_6px_24px_rgba(0,0,0,0.05)] transition-all duration-300 ease-out hover:-translate-y-[4px] hover:bg-[#FAF3EB] hover:shadow-[0_14px_40px_rgba(0,0,0,0.08)] sm:p-8"
+          >
+            <div class="flex h-full flex-col">
+              <img src="./assets/icons/pack-premium.svg" alt="" class="h-16 w-12" />
+
+              <h3 class="mt-4 font-heading text-[34px] font-bold leading-none text-brand-coral sm:text-[42px]">
+                Pack Premium
+              </h3>
+
+              <div class="mt-6 h-px w-full bg-[#D9D9D9]"></div>
+
+              <div class="mt-6">
+                <p class="text-[20px] font-bold text-brand-primary sm:text-[22px]">Objectif :</p>
+                <p class="mt-2 font-heading text-[30px] font-bold leading-[1.05] text-brand-text sm:text-[36px]">
+                  Vous accompagner jusqu’à l’achat
+                </p>
+              </div>
+
+              <p class="mt-8 text-[18px] leading-[1.4] text-brand-text-secondary sm:text-[20px]">
+                Du cadrage de votre besoin jusqu’à l’achat de votre voiture, nos deux
+                experts auto vous accompagnent à chaque étape.
+                <br>    <br>
+              </p>
+
+              <div class="mt-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                <span class="inline-flex min-h-[64px] items-center justify-center rounded-full bg-brand-primary px-8 text-[18px] font-bold text-white transition group-hover:scale-[1.02]">
+                  Je choisis cette offre
+                </span>
+
+                <div class="font-heading leading-none text-brand-text">
+                  <span class="text-[64px] font-black tracking-[-0.04em]">299€</span>
+                  <span class="ml-2 text-[26px] font-medium">ttc</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVIS -->
+    <section class="px-8 py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-[1280px]">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-brand-primary sm:text-4xl">Avis Clients</h2>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="rounded-[20px] bg-white p-6 shadow-brand">
+            <p class="text-sm font-bold text-brand-primary">On a trouvé la parfaite :</p>
+            <h3 class="mt-2 text-xl font-bold text-brand-text">Peugeot XXX de 2022</h3>
+            <p class="text-sm text-brand-text-secondary">à Franck F.</p>
+            <p class="mt-4 text-sm leading-6 text-brand-text-secondary">
+              J’hésitais à racheter ma voiture de fonction, une Ford Focus. C’était le
+              choix le plus simple et le plus rassurant.
+            </p>
+          </article>
+
+          <article class="rounded-[20px] bg-white p-6 shadow-brand">
+            <p class="text-sm font-bold text-brand-primary">On a trouvé la parfaite :</p>
+            <h3 class="mt-2 text-xl font-bold text-brand-text">Audi XXX de XXXX</h3>
+            <p class="text-sm text-brand-text-secondary">à Charlotte M.</p>
+            <p class="mt-4 text-sm leading-6 text-brand-text-secondary">
+              Avec l’arrivée de notre deuxième enfant, j’ai dû acheter ma première voiture.
+            </p>
+          </article>
+
+          <article class="rounded-[20px] bg-white p-6 shadow-brand">
+            <p class="text-sm font-bold text-brand-primary">On a trouvé la parfaite :</p>
+            <h3 class="mt-2 text-xl font-bold text-brand-text">Passat XXXX de XXXX</h3>
+            <p class="text-sm text-brand-text-secondary">à Anne &amp; Fabrice F.</p>
+            <p class="mt-4 text-sm leading-6 text-brand-text-secondary">
+              Avec deux enfants et des trajets fréquents le week-end, nous devions trouver
+              une voiture familiale.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+     
+
+
+
+<section class="px-4 py-12 md:px-6 lg:px-8">
+  <div class="relative mx-auto w-full max-w-[1280px]">
+
+    <!-- IMAGE UNIQUE (débord à gauche) -->
+   <img
+  src="./assets/contact.gif"
+  alt=""
+  aria-hidden="true"
+  class="contact-desktop-image"
+  style="
+    position:absolute;
+    bottom:0px;
+    left:80px;
+    width:380px;
+    max-width:none;
+    z-index:20;
+  "
+/>
+
+    <!-- BLOC -->
+    <div
+      class="relative overflow-hidden rounded-[28px]"
+      style="background:#C9E8B8;"
+    >
+      <!-- TRACÉ -->
+      <img
+        src="./assets/trait.svg"
+        alt=""
+        aria-hidden="true"
+        style="
+          position:absolute;
+          inset:0;
+          width:100%;
+          height:100%;
+          object-fit:cover;
+          opacity:0.7;
+          z-index:0;
+        "
+      />
+
+      <!-- CONTENU -->
+      <div
+        class="relative z-10 flex flex-col items-center justify-center gap-8 px-6 py-10 text-center md:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:text-left"
+        style="min-height:320px;"
+      >
+        <!-- ESPACE POUR L'IMAGE -->
+        <div class=" lg:block" style="width:280px;"></div>
+
+        <!-- TEXTE -->
+        <div class="max-w-[520px]">
+          <h2
+            style="
+              font-size:42px;
+              font-weight:700;
+              line-height:0.95;
+              color:#1F5F3C;
+            "
+          >
+            Vous êtes perdu ?
+          </h2>
+
+          <p
+            style="
+              margin-top:12px;
+              font-size:20px;
+              line-height:1.2;
+              color:#1F5F3C;
+            "
+          >
+            Nous répondons à toutes vos questions
+          </p>
+        </div>
+
+        <!-- CTA -->
+       
+<a
+  href="contact.html"
+  class="group cursor-pointer hover:scale-[1.02] inline-flex min-h-[64px] items-center justify-center gap-3 rounded-full bg-white px-8 text-[18px] font-bold text-brand-primary transition-all duration-200 ease-out hover:-translate-y-[2px] hover:bg-brand-primary hover:text-white"
+>
+ Nous contacter
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-[2px]"
+    aria-hidden="true"
+  >
+    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+    <path d="M3 7l9 6 9-6"></path>
+  </svg>
+</a>
+
+      
+    </div> 
+
+  </div>
+</section>
+<div id="footer"></div>
+
+ <script type="module">
+  import { loadHeader } from './header.js';
+  import { initBudgetSection } from './budget.js';
+  import { loadFooter } from './footer.js';
+
+  loadHeader();
+  loadFooter();
+  initBudgetSection();
+</script>
+
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.querySelectorAll('#js-fade-delay').forEach(function (el) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      });
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>

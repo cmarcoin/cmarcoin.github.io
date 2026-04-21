@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-brand-background font-body text-brand-text; }
+  h1, h2, h3, h4, h5, h6 { @apply font-heading; }
+  img { display: block; max-width: 100%; }
+}
+@layer base {
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+@layer components {
+  .container-site { @apply mx-auto max-w-site; }
+  .section-site { @apply px-6 py-16 lg:px-12 lg:py-20; }
+  .nav-link {
+        font-family: Outfit, sans-serif;
+    @apply inline-flex items-center whitespace-nowrap px-4 py-4 text-[18px] font-medium text-brand-text-secondary no-underline transition-all duration-300;
+    border-radius: 99px;
+  }
+  .nav-link:hover { @apply bg-brand-coral-light text-white; }
+}
+
+
+/* --- ÉTAT MINIFIÉ (SCROLL) - VERSION ULTRA COMPACTE --- */
+
+#header.is-scrolled {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* On réduit le padding au maximum (py-1 = 4px haut/bas) */
+#header.is-scrolled .site-header-nav {
+  @apply py-1; 
+}
+
+/* On réduit le logo encore plus pour gagner de la hauteur */
+#header.is-scrolled .main-logo {
+  height: 32px !important; /* Passage de 40px à 32px (h-8) */
+}
+
+/* On réduit la taille de police et le padding des liens pour compacter le tout */
+#header.is-scrolled .nav-link {
+  @apply py-1 px-3 text-[16px]; 
+}
+
+/* On réduit aussi le bouton contact si présent pour qu'il ne force pas la hauteur */
+#header.is-scrolled .bg-brand-primary {
+  @apply py-1 px-4 text-[14px];
+}
+
+
+
+
+
+
+/* --- HEADER FIXE & MINIFICATION --- */
+#header {
+  @apply fixed top-0 left-0 w-full z-[5000] transition-all duration-300 ease-in-out;
+  background-color: transparent;
+}
+
+#header.is-scrolled {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.site-header-nav { @apply transition-all duration-300 ease-in-out py-4; }
+#header.is-scrolled .site-header-nav { @apply py-2; }
+
+.main-logo {
+  height: 40px;
+  @apply w-auto transition-all duration-300 ease-in-out object-contain;
+}
+#header.is-scrolled .main-logo { height: 30px !important; }
+
+/* --- MENU MOBILE --- */
+.mobile-overlay-fixed {
+  @apply hidden fixed inset-0 bg-white z-[4000] flex-col items-center justify-center gap-8;
+}
+.mobile-overlay-fixed.active { @apply flex !important; }
+#mobileBtn { @apply relative z-[6000] lg:hidden p-2; }
+.hidden { display: none !important; }
+
+@media (min-width: 1024px) {
+  nav.hidden.lg\:flex { display: flex !important; }
+}
+
+/* --- INPUT BUDGET (RANGE) --- */
+input[type="range"].budget-track {
+  --progress: 0%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="range"].budget-track::-webkit-slider-runnable-track {
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(to right, #E76F51 var(--progress, 0%), #FFC4B5 var(--progress, 0%));
+}
+
+input[type="range"].budget-track::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 26px;
+  width: 26px;
+  background-color: #E76F51;
+  border: 4px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-top: -8px;
+}
+
+/* --- AUTRES --- */
+.spec-icon-wrap { @apply flex h-10 w-10 items-center justify-center rounded-full border border-[#A0CFC0] text-[#A0CFC0]; }
+
+@media (max-width: 1024px) { .HeroHome_Animation__intro { display: none; } }
+
+/* Style pour l'onglet de la page active */
+.nav-link.active {
+  @apply text-brand-coral ;font-weight: 800;
+
+}
+
+/* On s'assure que le hover ne change rien quand c'est déjà actif */
+.nav-link.active:hover {
+  @apply text-brand-coral opacity-90;
+}
+
+.HeroHome_Animation__intro {
+  pointer-events: none;
+  position: absolute;
+  
+  /* POSITIONNEMENT XXL STABLE */
+  top: -300px; /* Ajuste selon la hauteur souhaitée */
+  left: 50%;
+  transform: translateX(-10%); /* Décale l'anim vers la droite sans casser le flux */
+  
+  z-index: -1;
+
+  /* TAILLE MONSTRUEUSE */
+  width: 460vw; 
+  max-width: 8000px; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeroHome_Animation__intro {
+  pointer-events: none;
+  position: absolute;
+  
+  /* On fixe le point d'ancrage au centre exact du Hero */
+  top: 0%;
+  left: 50%;
+  
+  /* 1. On le centre (translate -50%) 
+     2. On le décale un peu vers la droite (20%) pour l'effet de ta capture
+     3. On remonte l'anim (-60%) pour pas qu'elle bouffe le texte */
+  transform: translate(-53%, 0%);
+  
+  z-index: -1;
+
+  /* TAILLE MONSTRUEUSE */
+  width: 460vw; 
+  min-width: 4000px; /* Force la taille même sur petit écran */
+  
+  display: flex;
+  justify-content: center;
+}
+
+.HeroHome_Animation__intro lottie-player,
+.HeroHome_Animation__intro dotlottie-player {
+  width: 100% !important;
+  height: auto !important;
+}
