@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build:css": "tailwindcss -i ./css/styles.css -o ./dist/output.css --watch",
-    "serve": "python3 -m http.server 5500"
+    "serve": "python3 -m http.server 5500",
+    "dev": "concurrently \"npm run build:css\" \"npm run serve\""
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "tailwindcss": "^3.4.17"
   }
 }
