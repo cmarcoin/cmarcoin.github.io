@@ -13,7 +13,7 @@ export function initBudgetSection() {
             mileage: '80 000 - 120 000 km',
             year: '2005 - 2010',
             price: '5000€',
-            image: '/assets/modeles/citadine.png'
+            image: '/assets/modeles/5000/citadine.png'
           },
           {
             title: 'Monospace Ancien',
@@ -21,7 +21,7 @@ export function initBudgetSection() {
             mileage: '150 000 - 200 000 km',
             year: '2005 - 2010',
             price: '5000€',
-            image: '/assets/modeles/monospace-ancien.png'
+            image: '/assets/modeles/5000/monospace-ancien.png'
           },
           {
             title: "Berline d'Entrée de Gamme",
@@ -29,7 +29,7 @@ export function initBudgetSection() {
             mileage: '120 000 - 160 000 km',
             year: '2012 - 2016',
             price: '5000€',
-            image: '/assets/modeles/berline-base.png'
+            image: '/assets/modeles/5000/berline-base.png'
           },
           {
             title: 'SUV Compact Ancien',
@@ -37,7 +37,7 @@ export function initBudgetSection() {
             mileage: '80 000 - 120 000 km',
             year: '2010 - 2014',
             price: '5000€',
-            image: '/assets/modeles/suv-ancien.png'
+            image: '/assets/modeles/5000/suv-ancien.png'
           }
         ],
         10000: [
@@ -47,107 +47,303 @@ export function initBudgetSection() {
             mileage: '50 000 - 90 000 km',
             year: '2015 - 2018',
             price: '10 000€',
-            image: '/assets/modeles/citadine-recente.jpg'
+            image: '/assets/modeles/10000/citadine-recente.png'
           },
           {
-            title: 'Break compact',
-            description: 'Format polyvalent pour famille ou longs trajets.',
-            mileage: '90 000 - 140 000 km',
-            year: '2013 - 2017',
-            price: '10 000€',
-            image: '/assets/modeles/break.jpg'
-          },
-          {
-            title: 'SUV urbain',
-            description: 'Position de conduite haute, gabarit compact, usage quotidien facile.',
-            mileage: '100 000 - 140 000 km',
-            year: '2014 - 2017',
-            price: '10 000€',
-            image: '/assets/modeles/suv-urbain.jpg'
-          },
-          {
-            title: 'Berline confort',
-            description: 'Bonne routière, idéale pour les trajets réguliers avec plus de confort.',
-            mileage: '110 000 - 150 000 km',
+            title: 'Monospace Familial',
+            description: 'Monospace familial spacieux, idéal pour les familles nombreuses. Kilométrage raisonnable.',
+            mileage: '80 000 - 120 000 km',
             year: '2014 - 2018',
             price: '10 000€',
-            image: '/assets/modeles/berline-confort.jpg'
+            image: '/assets/modeles/10000/monospace-familial.png'
+          },
+          {
+            title: 'Berline Confortable',
+            description: 'Berline confortable avec bon équipement. Parfaite pour les longs trajets.',
+            mileage: '60 000 - 100 000 km',
+            year: '2015 - 2019',
+            price: '10 000€',
+            image: '/assets/modeles/10000/berline-confort.png'
+          },
+          {
+            title: 'SUV Compact Récent',
+            description: 'SUV compact plus récent, bon compromis entre espace et consommation.',
+            mileage: '70 000 - 110 000 km',
+            year: '2016 - 2020',
+            price: '10 000€',
+            image: '/assets/modeles/10000/suv-compact-recent.png'
           }
         ],
         15000: [
           {
-            title: 'Compacte bien équipée',
-            description: 'Bon équilibre entre modernité, équipements et coût global.',
-            mileage: '40 000 - 80 000 km',
-            year: '2017 - 2020',
+            title: 'Citadine Premium',
+            description: 'Citadine haut de gamme avec équipements modernes. Faible kilométrage.',
+            mileage: '30 000 - 60 000 km',
+            year: '2019 - 2021',
             price: '15 000€',
-            image: '/assets/modeles/compacte.jpg'
+            image: '/assets/modeles/15000/citadine-premium.png'
           },
           {
-            title: 'SUV compact récent',
-            description: 'Polyvalent, rassurant et adapté à un usage familial modéré.',
-            mileage: '60 000 - 100 000 km',
-            year: '2018 - 2020',
+            title: 'Monospace Premium',
+            description: 'Monospace haut de gamme, très spacieux et bien équipé. Idéal pour grandes familles.',
+            mileage: '50 000 - 80 000 km',
+            year: '2018 - 2021',
             price: '15 000€',
-            image: '/assets/modeles/suv-compact.jpg'
+            image: '/assets/modeles/15000/monospace-premium.png'
           },
           {
-            title: 'Monospace récent',
-            description: 'Grand volume intérieur et vraie praticité pour les familles.',
-            mileage: '70 000 - 110 000 km',
-            year: '2016 - 2019',
+            title: 'Berline Premium',
+            description: 'Berline premium avec équipements haut de gamme. Confort et sécurité optimaux.',
+            mileage: '40 000 - 70 000 km',
+            year: '2019 - 2022',
             price: '15 000€',
-            image: '/assets/modeles/monospace-recent.jpg'
+             image: '/assets/modeles/15000/berline-premium.png'
           },
           {
-            title: 'Break routier',
-            description: 'Parfait pour avaler les kilomètres avec coffre généreux.',
-            mileage: '80 000 - 120 000 km',
-            year: '2017 - 2020',
+            title: 'SUV Milieu de Gamme',
+            description: 'SUV spacieux et confortable, bon équipement. Parfait pour famille et loisirs.',
+            mileage: '50 000 - 85 000 km',
+            year: '2018 - 2021',
             price: '15 000€',
-            image: '/assets/modeles/break-routier.jpg'
+           image: '/assets/modeles/15000/suv-gamme.png'
           }
         ],
         20000: [
           {
-            title: 'SUV familial',
-            description: 'Compromis solide entre espace, image et polyvalence.',
-            mileage: '40 000 - 80 000 km',
-            year: '2019 - 2022',
+            title: 'Citadine Électrique',
+            description: 'Citadine électrique récente, économique et écologique. Autonomie adaptée à la ville.',
+            mileage: '20 000 - 50 000 km',
+            year: '2020 - 2023',
             price: '20 000€',
-            image: '/assets/modeles/suv-familial.jpg'
+                 image: '/assets/modeles/20000/citadine-elec.png'
           },
           {
-            title: 'Berline récente',
-            description: 'Confort de route supérieur avec motorisations plus modernes.',
-            mileage: '35 000 - 75 000 km',
-            year: '2019 - 2022',
+            title: 'Monospace Luxe',
+            description: 'Monospace haut de gamme avec équipements premium. Espace et confort maximaux.',
+            mileage: '30 000 - 60 000 km',
+            year: '2020 - 2023',
             price: '20 000€',
-            image: '/assets/modeles/berline-recente.jpg'
+              image: '/assets/modeles/20000/mono-luxe.png'
           },
           {
-            title: 'Compacte premium',
-            description: 'Finition plus valorisante et équipements plus complets.',
-            mileage: '45 000 - 85 000 km',
-            year: '2018 - 2021',
+            title: 'Berline Luxe',
+            description: 'Berline de luxe avec finition premium. Confort, sécurité et technologie de pointe.',
+            mileage: '25 000 - 55 000 km',
+            year: '2021 - 2023',
             price: '20 000€',
-            image: '/assets/modeles/compacte-premium.jpg'
+                   image: '/assets/modeles/20000/berline-luxe.png'
           },
           {
-            title: 'Break moderne',
-            description: 'Solution idéale pour ceux qui veulent du coffre sans SUV.',
-            mileage: '50 000 - 90 000 km',
-            year: '2019 - 2022',
+            title: 'SUV Premium',
+            description: 'SUV premium spacieux, tout-terrain et confortable. Équipements haut de gamme.',
+            mileage: '35 000 - 65 000 km',
+            year: '2020 - 2023',
             price: '20 000€',
-            image: '/assets/modeles/break-moderne.jpg'
+             image: '/assets/modeles/20000/suv-premium.png'
           }
         ],
-        25000: [],
-        30000: [],
-        35000: [],
-        40000: [],
-        45000: [],
-        50000: []
+        25000: [
+          {
+            title: 'Citadine Électrique Premium',
+            description: 'Citadine électrique haut de gamme, grande autonomie et équipements modernes.',
+            mileage: '15 000 - 40 000 km',
+            year: '2021 - 2024',
+            price: '25 000€',
+                 image: '/assets/modeles/25000/citadine-elec.png'
+          },
+          {
+            title: 'Monospace Top Gamme',
+            description: 'Monospace top gamme, très spacieux avec équipements premium. Idéal pour grandes familles.',
+            mileage: '20 000 - 50 000 km',
+            year: '2021 - 2024',
+            price: '25 000€',
+              image: '/assets/modeles/25000/mono-top.png'
+          },
+          {
+            title: 'Berline Executive',
+            description: 'Berline executive avec finition luxe. Technologie avancée et confort optimal.',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '25 000€',
+                   image: '/assets/modeles/25000/berline-executive.png'
+          },
+          {
+            title: 'SUV de Luxe',
+            description: 'SUV de luxe, très spacieux et puissant. Équipements premium et tout-terrain.',
+            mileage: '25 000 - 55 000 km',
+            year: '2021 - 2024',
+            price: '25 000€',
+             image: '/assets/modeles/25000/suv-luxe.png'
+          }
+
+
+        ],
+        30000: [
+{
+            title: 'Compacte Électrique',
+            description: 'Compacte électrique récente, bonne autonomie et équipements modernes.',
+            mileage: '10 000 - 35 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+                 image: '/assets/modeles/30000/compact-elec.png'
+          },
+          {
+            title: 'Monospace Top Luxe',
+            description: 'Monospace top luxe, très spacieux avec équipements premium. Confort maximal.',
+            mileage: '15 000 - 40 000 km',
+            year: '2023 - 2024',
+            price: '30 000€',
+              image: '/assets/modeles/30000/mono-top.png'
+          },
+          {
+            title: 'Berline Top Executive',
+            description: 'Berline top executive, finition luxe et technologie de pointe. Confort exceptionnel.',
+            mileage: '15 000 - 40 000 km',
+            year: '2023 - 2024',
+            price: '30 000€',
+                   image: '/assets/modeles/30000/berline-executive.png'
+          },
+          {
+            title: 'SUV Top Luxe',
+            description: 'SUV top luxe, très spacieux et puissant. Équipements premium et performances.',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }
+          
+        ],
+        35000: [
+{
+            title: 'Électrique Premium',
+            description: 'Véhicule électrique premium, grande autonomie et équipements haut de gamme.',
+            mileage: '8 000 - 30 000 km',
+            year: '2023 - 2024',
+            price: '35 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'Monospace Ultra Luxe',
+            description: 'Monospace ultra luxe, espace maximal et équipements premium. Confort exceptionnel.',
+            mileage: '10 000 - 35 000 km',
+            year: '2023 - 2024',
+            price: '35 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'Berline Ultra Executive',
+            description: 'Berline ultra executive, finition luxe et technologie avancée. Prestige et confort.',
+            mileage: '10 000 - 35 000 km',
+            year: '2023 - 2024',
+            price: '35 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'SUV Ultra Luxe',
+            description: 'SUV ultra luxe, très spacieux et puissant. Équipements premium et performances exceptionnelles.',
+            mileage: '15 000 - 40 000 km',
+            year: '2023 - 2024',
+            price: '35 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }
+
+        ],
+        40000: [{
+            title: 'Électrique Top Gamme',
+            description: 'Véhicule électrique top gamme, autonomie exceptionnelle et équipements premium.',
+            mileage: '5 000 - 25 000 km',
+            year: '2023 - 2024',
+            price: '40 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'Monospace Exclusive',
+            description: 'Monospace exclusive, espace maximal et équipements ultra premium. Confort exceptionnel.',
+            mileage: '8 000 - 30 000 km',
+            year: '2023 - 2024',
+            price: '40 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'Berline Exclusive',
+            description: 'Berline exclusive, finition luxe et technologie de pointe. Prestige et élégance.',
+            mileage: '8 000 - 30 000 km',
+            year: '2023 - 2024',
+            price: '40 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'SUV Exclusive',
+            description: 'SUV exclusive, très spacieux et puissant. Équipements ultra premium et performances.',
+            mileage: '12 000 - 35 000 km',
+            year: '2023 - 2024',
+            price: '40 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        45000: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        50000: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }]
       }
     },
 
@@ -159,113 +355,330 @@ export function initBudgetSection() {
       values: {
         100: [
           {
-            title: 'Citadine LOA économique',
-            description: 'Petit budget mensuel pour accéder à une voiture récente.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '100€/mois',
-            image: '/assets/modeles/loa-citadine.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Compacte LOA',
-            description: 'Solution simple pour un usage quotidien sans gros achat initial.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '100€/mois',
-            image: '/assets/modeles/loa-compacte.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'SUV urbain LOA',
-            description: 'Format compact avec l’avantage d’un véhicule récent.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '100€/mois',
-            image: '/assets/modeles/loa-suv.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Hybride compacte LOA',
-            description: 'Accès plus facile à une motorisation moderne.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '100€/mois',
-            image: '/assets/modeles/loa-hybride.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           }
         ],
         200: [
           {
-            title: 'SUV compact LOA',
-            description: 'Mensualité plus confortable pour viser une voiture mieux équipée.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '200€/mois',
-            image: '/assets/modeles/loa-suv-compact.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Berline récente LOA',
-            description: 'Confort supérieur avec budget mensuel maîtrisé.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '200€/mois',
-            image: '/assets/modeles/loa-berline.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Break familial LOA',
-            description: 'Bon compromis famille / budget sans achat direct.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '200€/mois',
-            image: '/assets/modeles/loa-break.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Hybride LOA',
-            description: 'Accès à une solution plus moderne avec mensualité intermédiaire.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '200€/mois',
-            image: '/assets/modeles/loa-hybride-2.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           }
         ],
         300: [
           {
-            title: 'SUV récent LOA +',
-            description: 'Mensualité plus haute pour un modèle plus récent et mieux fini.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '300€/mois',
-            image: '/assets/modeles/loa-suv-plus.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Grande compacte LOA',
-            description: 'Plus d’équipement et de choix de finitions.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '300€/mois',
-            image: '/assets/modeles/loa-grande-compacte.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Familiale moderne LOA',
-            description: 'Bonne solution pour passer sur une voiture récente sans achat total.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '300€/mois',
-            image: '/assets/modeles/loa-familiale.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           },
           {
-            title: 'Hybride bien équipée LOA',
-            description: 'Niveau de finition plus élevé avec meilleur lissage budgétaire.',
-            mileage: 'Très faible',
-            year: 'Récent',
-            price: '300€/mois',
-            image: '/assets/modeles/loa-hybride-premium.jpg'
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
           }
         ],
-        400: [],
-        500: [],
-        600: [],
-        700: [],
-        800: [],
-        900: [],
-        1000: []
+        400: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        500: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        600: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        700: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        800: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        900: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }],
+        1000: [{
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          },
+          {
+            title: 'a faire',
+            description: 'lorem',
+            mileage: '20 000 - 45 000 km',
+            year: '2022 - 2024',
+            price: '30 000€',
+             image: '/assets/modeles/30000/suv-luxe.png'
+          }]
       }
     }
   };
@@ -309,25 +722,26 @@ const cardTemplate = (card) => `
       </div>
 
       <div class="flex flex-col flex-grow p-4 w-full">
-        <h3 class="text-[24px] font-bold leading-tight text-brand-text">${card.title}</h3>
+        <h3 class="text-[20px] font-bold leading-tight text-brand-text">${card.title}</h3>
         
-        <p class="mt-3 text-[16px] leading-relaxed text-brand-text-secondary">
-          ${card.description}
-        </p>
+
+<p class="mt-2 text-[16px] text-brand-text-secondary fixed-description">
+  ${card.description}
+</p>
         
-        <div class="mt-4 flex flex-row items-center gap-8">
+        <div class="mt-1 flex flex-row items-center gap-1">
           <div class="flex items-center gap-2">
             <img src="./assets/icons/kilo.svg" alt="Icone roue" class="h-6 w-6 shrink-0">
             <div class="flex flex-col">
               <span class="text-[15px] font-bold opacity-90 text-brand-text">Kilométrage</span>
-              <span style="font-size: 12px;" class="text-brand-text-secondary">${card.mileage}</span>
+              <span style="font-size: 11px;" class="text-brand-text-secondary">${card.mileage}</span>
             </div>
           </div>
           <div class="flex items-center gap-2">
             <img src="./assets/icons/annee.svg" alt="Icone volant" class="h-6 w-6 shrink-0">
             <div class="flex flex-col">
               <span class="text-[15px] font-bold opacity-90 text-brand-text">Année</span>
-              <span style="font-size: 12px;" class="text-brand-text-secondary">${card.year}</span>
+              <span style="font-size: 11px;" class="text-brand-text-secondary">${card.year}</span>
             </div>
           </div>
         </div>

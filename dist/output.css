@@ -883,6 +883,10 @@ body, html {
   min-height: 64px;
 }
 
+.min-h-\[48px\]{
+  min-height: 48px;
+}
+
 .w-10{
   width: 2.5rem;
 }

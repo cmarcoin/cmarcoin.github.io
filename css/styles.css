@@ -94,6 +94,7 @@
 }
 
 /* --- INPUT BUDGET (RANGE) --- */
+
 input[type="range"].budget-track {
   --progress: 0%;
   appearance: none;
@@ -101,26 +102,57 @@ input[type="range"].budget-track {
   background: transparent;
   width: 100%;
   cursor: pointer;
+  height: 40px; /* Zone d'interaction */
 }
 
+/* La barre (piste) */
 input[type="range"].budget-track::-webkit-slider-runnable-track {
-  height: 10px;
+  height: 14px; /* Plus épaisse comme sur le screen 1 */
   border-radius: 999px;
+  /* Le dégradé utilise vos variables de couleurs existantes */
   background: linear-gradient(to right, #E76F51 var(--progress, 0%), #FFC4B5 var(--progress, 0%));
 }
 
+/* Le bouton (rond/thumb) */
 input[type="range"].budget-track::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  height: 26px;
-  width: 26px;
-  background-color: #E76F51;
-  border: 4px solid #FFFFFF;
+  height: 44px; /* Très grand pour dépasser largement de la barre */
+  width: 44px;
+  background-color: #E76F51; /* La couleur orange vive */
+  border: 6px solid #FFFFFF; /* La bordure blanche épaisse caractéristique */
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  margin-top: -8px;
+  /* Ombre portée douce pour l'effet de profondeur */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  /* Centrage vertical : (Hauteur barre 14 / 2) - (Hauteur thumb 44 / 2) = -15px */
+  margin-top: -15px; 
+  cursor: grab;
+  transition: transform 0.1s ease;
 }
 
+input[type="range"].budget-track::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(0.95); /* Petit effet d'enfoncement au clic */
+}
+
+/* Adaptations pour Firefox */
+input[type="range"].budget-track::-moz-range-track {
+  height: 14px;
+  border-radius: 999px;
+  background: #FFC4B5;
+}
+input[type="range"].budget-track::-moz-range-progress {
+  height: 14px;
+  border-radius: 999px;
+  background: #E76F51;
+}
+input[type="range"].budget-track::-moz-range-thumb {
+  height: 32px;
+  width: 32px;
+  background-color: #E76F51;
+  border: 6px solid #FFFFFF;
+  border-radius: 50%;
+}
 /* --- AUTRES --- */
 .spec-icon-wrap { @apply flex h-10 w-10 items-center justify-center rounded-full border border-[#A0CFC0] text-[#A0CFC0]; }
 
@@ -184,4 +216,63 @@ input[type="range"].budget-track::-webkit-slider-thumb {
 .HeroHome_Animation__intro dotlottie-player {
   width: 100% !important;
   height: auto !important;
+}
+
+.fixed-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  height: 4.5em; /* Ajuste selon ta line-height pour correspondre à 3 lignes */
+  line-height: 1.5em;
+}
+
+/* Animation de l'accordéon */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-item.active .accordion-content {
+  /* La hauteur est gérée par le JS (scrollHeight) */
+}
+
+/* Rotation de l'icône chevron */
+.accordion-item.active .icon-chevron {
+  transform: rotate(180deg);
+}
+
+.icon-chevron {
+  transition: transform 0.3s ease;
+}
+
+.switch-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.switch-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.8), transparent);
+  transform: skewX(-20deg);
+  animation: shimmer 3s infinite;
+}
+@keyframes shimmer {
+  100% { left: 100%; }
+}
+
+/* 1. État par défaut (Achat - aria-pressed="false") */
+#modeToggle #modeKnob {
+  background-color: #FF6F61; /* brand-coral */
+  transform: translateX(0);
+}
+
+/* 2. État Activé (Leasing - aria-pressed="true") */
+/* On cible le rond (modeKnob) UNIQUEMENT si le parent (modeToggle) est activé */
+#modeToggle[aria-pressed="true"] #modeKnob {
+  background-color: #D97757; /* brand-orange */
+  transform: translateX(120px); /* Translation vers la droite */
 }
